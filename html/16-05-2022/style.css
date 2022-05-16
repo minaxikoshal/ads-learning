@@ -1,0 +1,52 @@
+body {
+    /* background-color: powderblue; */
+    background-image: url('images/3.png');
+    background-repeat: no-repeat;
+}
+
+/* Adding border */
+p {
+    border: 2px solid powderblue;
+    padding: 20px;
+    margin: 30px;
+  }
+
+/*Adding style in links*/
+a:link {
+    color: rgb(186, 41, 223);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(21, 255, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  th{
+      text-align: center;
+  }
+  td{
+
+      text-align: center;
+  }
+  th, td {
+    padding: 15px;
+  }
+  table{
+      padding: 20px;
+      background-color: aliceblue;
+  }
