@@ -1,0 +1,19 @@
+/*Single line comment*/
+/*Multi
+ line 
+ comment
+*/
+p {
+  text-align: center;
+  color: rgb(230, 215, 6);
+} 
+
+#para1 {
+    text-align: center;
+    color: rgb(89, 0, 255);
+  }
+
+.center {
+    text-align: center;
+    color: green;
+}

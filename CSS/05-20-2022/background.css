@@ -1,0 +1,33 @@
+body{
+    background-image: url("2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+    background-color: rgb(19, 243, 224);
+  }
+  
+  div {
+    background-color: lightblue;
+  }
+  
+  p {
+    background-color: aliceblue;
+  }
+/* opacity */
+  div {
+    background-color: green;
+  }
+  
+  div.first {
+    opacity: 0.1;
+  }
+  
+  div.second {
+    opacity: 0.3;
+  }
+  
+  div.third {
+    opacity: 0.6;
+  }
+  
