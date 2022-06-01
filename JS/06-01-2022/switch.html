@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Switch</title>
+</head>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  default:
+    text = "Looking forward to the Weekend";
+    break;
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+   case 1:
+       text="Today is Monday";
+    break;
+    case 2:text="Today is Tuesday";
+    break;
+    case 3:text="Today is Wednesday";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
