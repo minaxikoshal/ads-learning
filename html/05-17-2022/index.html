@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+<style>
+.city {
+  background-color: rgb(211, 160, 208);
+  color: rgb(81, 4, 126);
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;}
+</style>
+</head>
+
+
+<body>
+<!--using class-->
+<div class="city">
+  <h2>London</h2>
+  <p>Here is our demo text1</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Here is our Demo text2</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Here is our Demo text3</p>
+</div><br>
+<!--using id-->
+<h1 id="myHeader">My Header</h1>
+<br>
+<!--iframe example-->
+<iframe src="../16-05-2022/index.html" height="200" width="300" title="Iframe Example"></iframe>
+<br><br>
+
+<!--JavaScript-->
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello world! print with the help of JavaScript";
+</script> 
+<br><br>
+<!--responsive image-->
+<img src="../16-05-2022/images/1.jpg" style="max-width:100%;height:auto;">
+<br>
+
+<!--code-->
+<p>Some programming code here</p>
+<code>
+    x = 5;
+    y = 4s;
+    z = x + y;
+</code>
+    
+
+</body>
+</html>
