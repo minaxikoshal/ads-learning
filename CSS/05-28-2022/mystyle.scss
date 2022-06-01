@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Define standard variables and values for website */
 $bgcolor: lightblue;
 $textcolor: darkblue;
@@ -8,4 +9,16 @@ body {
   background-color: $bgcolor;
   color: $textcolor;
   font-size: $fontsize;
+=======
+/* Define standard variables and values for website */
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+>>>>>>> 6319495a6f564e49102a931dd3dc93a0d02ad220
 }

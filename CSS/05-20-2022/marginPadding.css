@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 p{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -14,4 +15,22 @@ div {
     padding-left: 80px;
     height: 200px;
   width: 50%;
+=======
+p{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+div {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    height: 200px;
+  width: 50%;
+>>>>>>> 6319495a6f564e49102a931dd3dc93a0d02ad220
   }

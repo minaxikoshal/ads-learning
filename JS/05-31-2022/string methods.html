@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,3 +38,44 @@ document.getElementById("demo2").innerHTML = str2.indexOf("locate");
 </html>
 
 
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Method</title>
+    </head>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The slice() method extract a part of a string: </p>
+
+<p id="demo1"></p>
+
+<p>Replace "Earth" with "Moon" in the paragraph:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Earth is beautiful</p>
+
+<p id="demo2"></p>
+
+<script>
+let str = "Star, Moon, Earth";
+document.getElementById("demo1").innerHTML = str.slice(6,11);
+//string replace
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML =
+  text.replace("Earth","Moon");
+}
+//Location of the content
+let str2 = "Please locate where 'locate' occurs!";
+document.getElementById("demo2").innerHTML = str2.indexOf("locate");
+</script>
+
+</body>
+</html>
+
+
+>>>>>>> 6319495a6f564e49102a931dd3dc93a0d02ad220

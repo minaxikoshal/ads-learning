@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head><title>CSS Counters</title>
@@ -26,3 +27,33 @@ h2::before {
 </html>
 
 
+=======
+<!DOCTYPE html>
+<html>
+<head><title>CSS Counters</title>
+<style>
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+</style>
+</head>
+<body>
+
+<h1>Using CSS Counters</h1>
+
+<h2>HTML </h2>
+<h2>CSS</h2>
+<h2>JavaScript</h2>
+<h2>Python</h2>
+<h2>SQL</h2>
+
+</body>
+</html>
+
+
+>>>>>>> 6319495a6f564e49102a931dd3dc93a0d02ad220

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 p.dotted {border-style: dotted;}
 p.dashed {border-style: dashed;}
 p.solid {border-style: solid;}
@@ -24,4 +25,32 @@ p.one {
   p.three {
     border-style: dotted;
     border-color: blue;
+=======
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+p.one {
+    border-style: solid;
+    border-color: red;
+  }
+  
+  p.two {
+    border-style: solid;
+    border-color: green;
+  } 
+  
+  p.three {
+    border-style: dotted;
+    border-color: blue;
+>>>>>>> 6319495a6f564e49102a931dd3dc93a0d02ad220
   } 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Single line comment*/
 /*Multi
  line 
@@ -17,3 +18,24 @@ p {
     text-align: center;
     color: green;
 }
+=======
+/*Single line comment*/
+/*Multi
+ line 
+ comment
+*/
+p {
+  text-align: center;
+  color: rgb(230, 215, 6);
+} 
+
+#para1 {
+    text-align: center;
+    color: rgb(89, 0, 255);
+  }
+
+.center {
+    text-align: center;
+    color: green;
+}
+>>>>>>> 6319495a6f564e49102a931dd3dc93a0d02ad220

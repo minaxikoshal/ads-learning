@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head><title>RWD images</title>
@@ -26,3 +27,33 @@ body {
 </html>
 
 
+=======
+<!DOCTYPE html>
+<html>
+<head><title>RWD images</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* For width smaller than 400px: */
+body {
+  background-repeat: no-repeat;
+  background-image: url('img_smallflower.jpg'); 
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+  body { 
+     background-image: url('img_flowers.jpg'); 
+     background-size: cover;
+  }
+}
+</style>
+</head>
+<body>
+
+<p style="margin-top:360px;">Resize the browser width and the background image will change at 400px.</p>
+
+</body>
+</html>
+
+
+>>>>>>> 6319495a6f564e49102a931dd3dc93a0d02ad220

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -98,4 +99,106 @@ src="https://www.youtube.com/embed/a3ICNMQW7Ok">
 
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>web page</title>
+    </head>
+<body>
+<!--Canvas tag-->
+<h2>Image Draw with the help of canvas tag</h2><br>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+
+    <h2>Grading with the help of canvas tag</h2>
+    <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.
+    </canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas1");
+    var ctx = c.getContext("2d");
+    // Create gradient
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+
+    //current location
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+    if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+    }
+
+    function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+    }
+    
+    //web storage
+    function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+    } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+    }
+    
+    
+
+    </script>
+<br>
+<h2>SVG Circle</h2>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="pink" />
+</svg>
+<br>
+<h3>Video Tag</h3>
+<video width="320" height="240" controls autoplay>
+    <source src="demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+ 
+<h3>Audio Tag</h3>
+<audio controls>
+    <source src="demo1.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<br><br>
+<!--object tag-->
+<object data="images/1.jpg"></object>
+
+<h3>youtube source media</h3>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/a3ICNMQW7Ok">
+</iframe>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+<!--Session storage-->
+<br><br>
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+
+
+</body>
+>>>>>>> 6319495a6f564e49102a931dd3dc93a0d02ad220
 </html>
