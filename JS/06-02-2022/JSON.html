@@ -14,7 +14,7 @@ let text = '{"employees":[' +
 '{"firstName":"Jenny","lastName":"Brown" },' +
 '{"firstName":"Anna","lastName":"Smith" },' +
 '{"firstName":"Jennet","lastName":"Jones" }]}';
-
+//..
 const obj = JSON.parse(text);
 document.getElementById("demo").innerHTML =
 obj.employees[1].firstName + " " + obj.employees[1].lastName;
