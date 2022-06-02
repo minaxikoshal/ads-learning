@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maps</title>
+    </head>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Creating a Map from an Array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+//Map is used to hold values in key-pairs
+const Locations = new Map([
+  ["Dellhi", 500],
+  ["Chandigarh", 300],
+  ["Noida", 200]
+]);
+
+document.getElementById("demo").innerHTML = Locations.get("Chandigarh");
+</script>
+
+</body>
+</html>
+
