@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Prototypes</title>
+</head>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>The prototype property allows you to add new methods to objects constructors:</p>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+//adding new properties
+Person.prototype.literature = "English";
+
+const classic = new Person("Anna", "Smith", 22, "blue");
+document.getElementById("demo").innerHTML =
+"Best Classic Literature: " + classic.literature; 
+</script>
+
+</body>
+</html>
