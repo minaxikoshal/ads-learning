@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Array</title>
+    </head>
+<body>
+
+<h2>Access Array Values</h2>
+<p id="demo"></p>
+
+<script>
+const myJSON = '{"name":"Anna", "age":30, "fruits":["Apple", "Mango", "Grapes"]}';
+const myObj = JSON.parse(myJSON);
+
+document.getElementById("demo").innerHTML = myObj.fruits[0];
+</script>
+
+</body>
+</html>
