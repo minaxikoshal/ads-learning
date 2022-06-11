@@ -1,4 +1,4 @@
-import ExpenseItems from "./Expenseitems";
+import ExpenseItems from "./ExpenseItems";
 import './Expenses.css' ;
 
 function Expenses(props){
@@ -13,4 +13,4 @@ function Expenses(props){
     );
 }
 
-export default expenses;
+export default Expenses;

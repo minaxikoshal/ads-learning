@@ -1,4 +1,4 @@
-import './Card.css';
+import '../UI/card.css';
 
 function Card(){
     return <div className="card"></div>;
