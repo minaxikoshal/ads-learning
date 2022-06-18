@@ -1,29 +1,33 @@
 import ExpenseItems from "./components/expenses/ExpenseItems.js";
 import NewExpense from "./components/NewExpenses/NewExpense.js";
+import { ExpensesFilter } from "./components/expenses/ExpensesFilter.js";
+import Expenses from "./components/expenses/Expenses.js";
+
+const expenses = [
+  {
+    id: 'e1',
+    title: 'Furniture',
+    amount: 94.12,
+    date: new Date(2020, 7, 14),
+  },
+  { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+  {
+    id: 'e3',
+    title: 'Car Maintenance',
+    amount: 294.67,
+    date: new Date(2021, 2, 28),
+  },
+  {
+    id: 'e4',
+    title: 'Books',
+    amount: 450,
+    date: new Date(2021, 5, 12),
+  },
+];
+
 
 const App=()=> {
-  const expenses = [
-    {
-      id: 'e1',
-      title: 'Furniture',
-      amount: 94.12,
-      date: new Date(2020, 7, 14),
-    },
-    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
-    {
-      id: 'e3',
-      title: 'Car Maintenance',
-      amount: 294.67,
-      date: new Date(2021, 2, 28),
-    },
-    {
-      id: 'e4',
-      title: 'Books',
-      amount: 450,
-      date: new Date(2021, 5, 12),
-    },
-  ];
-
+  
   const addExpenseHandler=(expense)=>{
     console.log('In app js');
     console.log(expense);
@@ -33,11 +37,12 @@ const App=()=> {
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
-      {/* <Expenses items={Expenses} /> */}
-      <ExpenseItems title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date}></ExpenseItems>
+      <ExpensesFilter />
+      {/* <Expenses items={expenses} /> */}
+      {/* <ExpenseItems title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date}></ExpenseItems>
       <ExpenseItems title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date}></ExpenseItems>
       <ExpenseItems title={expenses[2].title} amount={expenses[2].amount} date={expenses[2].date}></ExpenseItems>
-      <ExpenseItems title={expenses[3].title} amount={expenses[3].amount} date={expenses[3].date}></ExpenseItems>
+      <ExpenseItems title={expenses[3].title} amount={expenses[3].amount} date={expenses[3].date}></ExpenseItems> */}
 
     </div>
   );
