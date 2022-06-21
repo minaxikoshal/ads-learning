@@ -1,9 +1,9 @@
-import ExpenseItems from "./components/expenses/ExpenseItems.js";
+import React, { useState } from 'react';
 import NewExpense from "./components/NewExpenses/NewExpense.js";
 import { ExpensesFilter } from "./components/expenses/ExpensesFilter.js";
 import Expenses from "./components/expenses/Expenses.js";
 
-const expenses = [
+const DUMMY_EXPENSES = [
   {
     id: 'e1',
     title: 'Furniture',
@@ -27,24 +27,21 @@ const expenses = [
 
 
 const App=()=> {
-  
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+
   const addExpenseHandler=(expense)=>{
-    console.log('In app js');
-    console.log(expense);
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
   };
 
   
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
-      <ExpensesFilter />
+      {/* <ExpensesFilter /> */}
       <Expenses items={expenses} />
-      {/* <ExpenseItems title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date}></ExpenseItems>
-      <ExpenseItems title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date}></ExpenseItems>
-      <ExpenseItems title={expenses[2].title} amount={expenses[2].amount} date={expenses[2].date}></ExpenseItems>
-      <ExpenseItems title={expenses[3].title} amount={expenses[3].amount} date={expenses[3].date}></ExpenseItems> */}
-
-    </div>
+        </div>
   );
 }
 
