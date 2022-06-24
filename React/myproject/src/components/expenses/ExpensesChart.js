@@ -1,7 +1,7 @@
 import React from "react";
 import { Chart } from "../Chart/Chart";
 
-export const ExpensesChart = (props) => {
+ const ExpensesChart = (props) => {
   const chartDataPoints = [
     { label: "Jan", value: 0 },
     { label: "Feb", value: 0 },
@@ -26,3 +26,5 @@ export const ExpensesChart = (props) => {
     </div>
   );
 };
+
+export default ExpensesChart;

@@ -1,7 +1,7 @@
 import React from "react";
 import ExpenseItems from "./ExpenseItems";
 import "./ExpensesList.css";
-export const ExpensesList = (props) => {
+const ExpensesList = (props) => {
   let expenseContent = " ";
 
   if (props.items.lenght === 0) {
@@ -20,3 +20,5 @@ export const ExpensesList = (props) => {
     </ul>
   );
 };
+
+export default ExpensesList;
